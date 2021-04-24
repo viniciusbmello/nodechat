@@ -8,7 +8,7 @@ export class CreateSettings1619285556879 implements MigrationInterface {
                 name: "settings",
                 columns: [
                     {
-                        name: "id",
+                        name: "settings_id",
                         type: "uuid",
                         generationStrategy: "uuid",
                         isPrimary: true

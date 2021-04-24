@@ -9,17 +9,17 @@ import {
 
 @Entity ("settings")
 class Setting {
-    @PrimaryColumn({type: "uuid"})
+    @PrimaryColumn({type: "uuid", name: "settings_id"})
     @Generated("uuid")
     id: string;
     @Column()
     username: string;
     @Column()
     chat: boolean;
-    @UpdateDateColumn()
-    updated_at: Date;
-    @CreateDateColumn()
-    created_at: Date;
+    @UpdateDateColumn({name: "updated_at"})
+    updatedAt: Date;
+    @CreateDateColumn({name: "created_at"})
+    createdAt: Date;
 }
 
 export { Setting }
